@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,14 +6,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ecivon Studios - Web Developer</title>
   <style>
-    body { font-family: sans-serif; padding: 2rem; max-width: 800px; margin: auto; }
-    h1 { color: #333; }
-    section { margin-bottom: 2rem; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+      color: #333;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      animation: fadeInBody 1s ease-in;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      color: #2c3e50;
+      font-size: 2.5rem;
+      animation: fadeSlideIn 1s ease-in-out;
+    }
+
+    h2 {
+      color: #e74c3c;
+      margin-top: 2rem;
+      animation: fadeSlideIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeSlideIn {
+      from { opacity: 0; transform: translateX(-20px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: rgba(255, 255, 255, 0.6);
+      padding: 0.75rem;
+      margin-bottom: 0.5rem;
+      border-radius: 8px;
+      animation: popIn 0.8s ease forwards;
+    }
+
+    @keyframes popIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    a {
+      color: #2980b9;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #1c5980;
+    }
   </style>
 </head>
 <body>
   <h1>Ecivon Studios</h1>
-  <p>We are freelance web developers who build clean, fast websites for students, creators, and small businesses.</p>
+  <p><strong>Freelance Web Developer</strong> | We Build Simple, Fast & Custom Websites</p>
 
   <section>
     <h2>Services</h2>
@@ -25,16 +85,13 @@
 
   <section>
     <h2>Sample Projects</h2>
-    <ul>
-      <li><strong>Student Portfolio:</strong> A one-page resume site</li>
-      <li><strong>Local Tutor Site:</strong> Services page + contact form</li>
-    </ul>
+    <p>Coming soon...</p>
   </section>
 
   <section>
     <h2>Contact</h2>
-    <p>Email: ecivonstudios@gmail.com</p>
-    <p>Instagram: EcivonStudios</p>
+    <p>Email: <a href="mailto:ecivonstudios@gmail.com">ecivonstudios@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/EcivonStudios" target="_blank">@EcivonStudios</a></p>
   </section>
 </body>
 </html>
